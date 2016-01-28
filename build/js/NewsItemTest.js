@@ -12,7 +12,7 @@ var NewsItem = React.createClass({displayName: "NewsItem",
     getRank: function() {
         return(
             React.createElement("div", {className: "newsItem-rank"}, 
-                this.props.rank
+                this.props.rank, "."
             )
         );
     },
@@ -60,7 +60,7 @@ var NewsItem = React.createClass({displayName: "NewsItem",
 
     render: function() {
         return(
-            React.createElement("div", {className: "NewsItem"}, 
+            React.createElement("div", {className: "newsItem"}, 
                 this.getRank(), 
                 this.getVote(), 
                 React.createElement("div", {className: "newsItem-itemText"}, 

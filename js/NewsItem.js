@@ -11,7 +11,7 @@ var NewsItem = React.createClass({
     getRank: function() {
         return(
             <div className="newsItem-rank">
-                {this.props.rank}
+                {this.props.rank}.
             </div>
         );
     },
@@ -59,7 +59,7 @@ var NewsItem = React.createClass({
 
     render: function() {
         return(
-            <div className="NewsItem">
+            <div className="newsItem">
                 {this.getRank()}
                 {this.getVote()}
                 <div className="newsItem-itemText">

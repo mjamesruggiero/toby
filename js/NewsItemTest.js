@@ -10,4 +10,3 @@ $.ajax({
     // Use a fake rank for now
     React.render(<NewsItem item={items[0]} rank={1}/>, $('#content')[0]);
 });
-
